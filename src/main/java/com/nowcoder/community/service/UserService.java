@@ -211,8 +211,12 @@ public class UserService implements CommunityConstant {
 
         // 更新密码
         user.setPassword(newPassword);
-        // 更新数据库
+        // 更新数据到数据库
         userMapper.updatePassword(user.getId(), user.getPassword());
         return map;
+    }
+
+    public User findUserByName(String username){
+        return userMapper.selectByName(username);
     }
 }

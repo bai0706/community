@@ -5,7 +5,7 @@ package com.nowcoder.community.entity;
 public class Page {
 
     //当前页码
-    private int current =1;
+    private int current=1;
     //显示上限
     private int limit=10;
     //数据总数（用于计算总页数）

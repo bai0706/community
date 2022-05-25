@@ -1,6 +1,5 @@
 package com.nowcoder.community.config;
 
-
 import com.google.code.kaptcha.Producer;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;

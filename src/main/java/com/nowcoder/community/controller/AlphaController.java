@@ -183,4 +183,14 @@ public class AlphaController {
         System.out.println();
         return "get session";
     }
+
+    // ajax示例
+    // 实现异步通信，当前页面不跟新，但访问服务器更新了数据
+    @RequestMapping(path = "/ajax", method = RequestMethod.POST)
+    @ResponseBody
+    public String testAjax(String name, int age){
+        System.out.println(name);
+        System.out.println(age);
+        return CommunityUtil.getJSONString(0, "操作成功！");
+    }
 }
