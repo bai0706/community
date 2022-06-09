@@ -1,10 +1,11 @@
 $(function(){
 	$("#publishBtn").click(publish);
+	console.log("发布")
 });
 
 function publish() {
 	$("#publishModal").modal("hide");
-
+	console.log("发布1")
 	// 获取标题和内容
 	var title= $("#recipient-name").val();
 	var content = $("#message-text").val();
@@ -30,4 +31,5 @@ function publish() {
 			}, 2000);
 		}
 	);
+
 }

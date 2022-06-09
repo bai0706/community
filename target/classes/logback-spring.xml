@@ -2,7 +2,7 @@
 <configuration>
     <contextName>community</contextName>
     <!--log日志文件的存放路径，以及存在多个项目时，给了下一级的项目路径-->
-    <property name="LOG_PATH" value="D:/Learning/Projects/Log_data"/>
+    <property name="LOG_PATH" value="D:/Learning/Projects/data/Log_data"/>
     <property name="APPDIR" value="community"/>
 
     <!-- error file -->
