@@ -1,16 +1,13 @@
 package com.nowcoder.community.service;
 
 import com.nowcoder.community.util.RedisKeyUtil;
-import io.lettuce.core.cluster.event.TopologyRefreshEvent;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.cache.CacheProperties;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.SessionCallback;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.parser.Entity;
 
 @Service
 public class LikeService {

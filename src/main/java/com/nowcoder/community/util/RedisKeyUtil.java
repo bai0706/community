@@ -1,7 +1,5 @@
 package com.nowcoder.community.util;
 
-import sun.util.locale.provider.SPILocaleProviderAdapter;
-
 public class RedisKeyUtil {
 
     private static final String SPLIT = ":";

@@ -1,13 +1,12 @@
 package com.nowcoder.community;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.BeansException;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.test.context.ContextConfiguration;
 
-import java.applet.AppletContext;
 
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
