@@ -31,6 +31,7 @@ public class ServiceLogAspect {
             return;
         }
         HttpServletRequest request = attributes.getRequest();
+
         String ip = request.getRemoteHost();
         String now = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         String target = joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName();

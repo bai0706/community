@@ -61,4 +61,11 @@ public class HomeController implements CommunityConstant {
     public String getErrorPage(){
         return "/error/500";
     }
+
+    // 拒绝访问时的提示界面
+    @RequestMapping(path= "/denied", method = RequestMethod.GET)
+    public String getDeniedPage(){
+        // 没有权限时返回404，页面不存在
+        return "/error/404";
+    }
 }
